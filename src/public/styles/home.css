@@ -37,6 +37,10 @@ div#container {
     width: 90%;
 }
 
+div#container h2 {
+	padding: 0 1rem;
+}
+
 div#container article p {
     padding: 0px 3rem;
 }
