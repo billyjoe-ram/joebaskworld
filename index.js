@@ -15,6 +15,12 @@ app.get('/', (req, res) => {
   .sendFile(path.join(__dirname, '/src/public/index.html'))
 })
 
+app.get('/players', (req, res) => {
+  return res
+  .status(200)
+  .sendFile(path.join(__dirname, '/src/public/players.html'))
+})
+
 app.listen(process.env.PORT, () => {
   console.log(`Server rodando na porta: ${process.env.PORT}`)
 })
