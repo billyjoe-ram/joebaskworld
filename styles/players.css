@@ -1,0 +1,104 @@
+h1 {
+    text-align: center;
+
+    color: white;
+}
+
+main {
+    display: block;
+}
+
+main div form {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+main div form label {
+    color: white;
+}
+
+main div form input, main div form textarea {
+    margin: 1rem 0;
+    width: 90%;    
+}
+
+main div form textarea {
+    height: 35vh;
+    resize: none;
+}
+
+main div form button {
+    width: max-content;
+    height: min-content;
+
+    padding: 1rem;
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 0.4rem;
+
+    background-color: orangered;
+    color: white;
+
+    cursor: pointer;
+    
+    transition: 1s;
+}
+
+main div form button:hover {
+    background-color: rgb(255, 96, 38);
+}
+
+main div:last-child button {
+    width: max-content;
+    height: min-content;
+
+    padding: 1rem;
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 0.4rem;
+
+    background-color: rgb(1, 1, 100);
+    color: white;
+
+    cursor: pointer;
+    
+    transition: 1s;
+}
+
+main div:last-child button:hover {
+    background-color: rgb(19, 19, 110);
+}
+
+main div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main div form {
+        align-items: inherit;
+        padding-left: 2rem;
+    }
+
+    main div form input, main div form textarea {
+        margin: 1rem 0;
+    }
+
+    main div form input {
+        margin: 1rem 0;
+        width: 90%;
+    }
+
+    main div form textarea {    
+        width: 92%;
+    }
+}

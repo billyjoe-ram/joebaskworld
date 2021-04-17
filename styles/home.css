@@ -1,0 +1,64 @@
+main {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+main h1 {
+    margin: 0;
+}
+
+main h1, span {
+    color: whitesmoke;
+}
+
+main span {
+    margin: 1.2rem;
+}
+
+h2, p {
+    color: rgb(58, 58, 58);
+}
+
+div#container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: white;
+
+    border-radius: 0.8rem;
+
+    width: 90%;
+}
+
+div#container article p {
+    padding: 0px 3rem;
+}
+
+div#container button {
+    width: max-content;
+    height: min-content;
+
+    padding: 1rem;
+    margin: 1rem auto;
+
+    border: none;
+    border-radius: 0.4rem;
+
+    background-color: rgb(1, 1, 100);
+    color: white;
+
+    cursor: pointer;
+    
+    transition: 1s;
+}
+
+div#container button:hover {
+    background-color: rgb(19, 19, 110);
+}

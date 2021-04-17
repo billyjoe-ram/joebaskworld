@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's Basketball World - Jogadores</title>
+    
+    <script src="./scripts/players.js"></script>
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/players.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Início</a></li>
+            <li><a class="active" href="./players.html">Jogadores</a></li>
+        </ul>
+    </nav>
+
+    <h1>
+        Joe's Basketball World - Jogadores
+    </h1>
+
+    <main>
+        <div>
+            <form method="POST" onsubmit="postData(event)" id="playersform">
+                <label for="player">Nome do jogador</label>
+                <input type="text" name="player" placeholder="Jogador" id="player">
+    
+                <label for="description">História do Jogador</label>
+                <textarea type="text" name="description" placeholder="Escreva sobre a história do jogador"></textarea>
+    
+                <button type="submit" >Adicionar Post</button>
+            </form>
+        </div>
+
+        <div>
+            <ul id="posts"></ul>
+
+        <button type="button" onclick="loadPosts()">Carregar Posts</button>
+        </div>
+        
+    </main>
+</body>
+</html>

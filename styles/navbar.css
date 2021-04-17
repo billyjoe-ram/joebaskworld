@@ -1,0 +1,38 @@
+nav {
+    margin-bottom: 10vh;
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    
+    list-style-type: none;
+    
+    overflow: hidden;
+
+    background-color: rgb(31, 31, 31);
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(1, 1, 100);
+}
+
+.active {
+    background-color: orangered;
+}
