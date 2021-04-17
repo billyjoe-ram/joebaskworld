@@ -9,7 +9,7 @@ function loadLastPost() {
 
     const lastPostContentContainer = document.querySelector("article");
 
-    if (lastPost.lenght != 0) {
+    if (lastPost.player && lastPost.time && lastPost.description) {
         lastPostTitleContainer.innerHTML = `Último post atualizado: ${lastPost.player}`;
 
         const lastPostTime = lastPost.time;
